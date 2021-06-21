@@ -1,19 +1,19 @@
 <template>
-  <h1>Sistem Durumu : {{ status }}</h1>
+  <div>
+   <home></home>
+  </div>
 </template>
 
 <script>
-  export default {
-    data: function(){
-      return{
-        status: "Pasif",
-      }
-    }   
+  import Home from './Home.vue';
+  export default{
+    components: {
+      "home": Home
+    }
   }
+  
 </script>
 
 <style>
-  h1{
-    color: blue;
-  }
+ 
 </style>
