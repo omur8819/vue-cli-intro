@@ -1,6 +1,6 @@
 <template>
     <div>
-       <lamp-status v-for="lamp in 5"></lamp-status>
+       <lamp-status v-bind:key="lamp" v-for="lamp in 5"></lamp-status>
     </div>
 </template>
 
